@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./first-level.component.css']
 })
 export class FirstLevelComponent implements OnInit {
-  whereImAt:string = "";
+  whereImAt:string = "I'm alright!";
+  someStuff = ['This thing','and this thing','and THIS THING!'];
 
   constructor() { }
 
