@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class FirstLevelComponent implements OnInit {
   whereImAt:string = "I'm alright!";
   someStuff = ['This thing','and this thing','and THIS THING!'];
+  tryToGetIt:string = "I'm trying to understand it"
 
   constructor() { }
 
