@@ -10,9 +10,14 @@ export class FirstLevelComponent implements OnInit {
   someStuff = ['This thing','and this thing','and THIS THING!'];
   tryToGetIt:string = "I'm trying to understand it"
 
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  addToStuff(value:string){
+    this.someStuff.push(value);
   }
 
 }

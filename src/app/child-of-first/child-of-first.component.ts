@@ -1,4 +1,4 @@
-import { Component, OnInit, Input  } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter  } from '@angular/core';
 import { FormsModule} from '@angular/forms';
 import { Thing } from '../thing';
 
@@ -7,12 +7,12 @@ import { Thing } from '../thing';
   templateUrl: './child-of-first.component.html',
   styleUrls: ['./child-of-first.component.css']
 })
-export class ChildOfFirstComponent implements OnInit {
+export class ChildOfFirstComponent{
   @Input() something:string;
+  @Output() someItem = new EventEmitter<string>();
 
-  constructor() { }
-
-  ngOnInit() {
+  sendItem(value:string){
+    this.someItem.emit(value);
   }
-
+  
 }

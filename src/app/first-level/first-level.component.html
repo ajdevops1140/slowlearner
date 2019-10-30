@@ -5,4 +5,4 @@ Where I'm at: {{whereImAt}}
 <p>I live in a for loop</p>
 <input #what>
 <div *ngFor="let thing of someStuff" >{{thing}}</div>
-<app-child-of-first [something]="what.value"></app-child-of-first>
+<app-child-of-first [something]="what.value" (someItem)=""></app-child-of-first>
