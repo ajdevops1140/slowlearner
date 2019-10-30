@@ -7,11 +7,13 @@ import { transactionItem } from '../transactionItem';
   styleUrls: ['./transaction-entry-form.component.css']
 })
 export class TransactionEntryFormComponent implements OnInit {
-  transModel:transactionItem;
+  transModel:transactionItem = new transactionItem();
 
   constructor() { }
 
   ngOnInit() {
   }
+
+  get diagnostic() { return JSON.stringify(this.transModel); }
 
 }
