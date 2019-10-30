@@ -6,10 +6,11 @@ import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { FirstLevelComponent } from './first-level/first-level.component';
 import { ChildOfFirstComponent } from './child-of-first/child-of-first.component';
+import { InputTransactionComponent } from './input-transaction/input-transaction.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, HelloComponent, FirstLevelComponent, ChildOfFirstComponent ],
+  declarations: [ AppComponent, HelloComponent, FirstLevelComponent, ChildOfFirstComponent, InputTransactionComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
