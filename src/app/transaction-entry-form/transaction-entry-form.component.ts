@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { transactionItem } from '../transactionItem';
 
 @Component({
   selector: 'app-transaction-entry-form',
