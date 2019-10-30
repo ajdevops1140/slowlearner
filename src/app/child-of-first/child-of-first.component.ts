@@ -1,4 +1,6 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input  } from '@angular/core';
+import { FormsModule} from '@angular/forms';
+import { Thing } from '../thing';
 
 @Component({
   selector: 'app-child-of-first',
