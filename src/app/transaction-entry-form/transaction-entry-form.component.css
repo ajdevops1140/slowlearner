@@ -1,0 +1,7 @@
+.form-group{
+  max-width: 500px;
+}
+
+.form-group > label{
+  width:150px;
+}
