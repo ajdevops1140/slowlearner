@@ -7,6 +7,7 @@ import { transactionItem } from '../transactionItem';
   styleUrls: ['./transaction-entry-form.component.css']
 })
 export class TransactionEntryFormComponent implements OnInit {
+  transModel:transactionItem;
 
   constructor() { }
 
