@@ -8,7 +8,7 @@ import { transactionItem } from '../transactionItem';
 })
 export class TransactionEntryFormComponent implements OnInit {
   transModel:transactionItem = new transactionItem();
-
+ 
   constructor() { }
 
   ngOnInit() {

@@ -2,11 +2,10 @@
 
 <h4>Transaction Entry</h4>
 <br/>
-{{diagnostic}}
 <form #transactionForm="ngForm">
   <div class='form-group'>
     <label for="desc">Business </label>
-    <input type="text" class="form-control" [(ngModel)]="transModel.desc" id="desc" name="desc" required #desc="ngModel" #spy>
+    <input type="text" class="form-control" [(ngModel)]="transModel.desc" id="desc" name="desc" required #spy>
   </div>
   {{spy.className}}
 
