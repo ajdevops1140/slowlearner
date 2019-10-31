@@ -16,7 +16,7 @@
   <div class='form-group'>
     <label for="date">Date </label>
     <input type="date" class="form-control" [(ngModel)]="transModel.date" 
-     value="date1" id="date" name="date" required #date="ngModel">
+     id="date" name="date" required #date="ngModel">
     <div [hidden]="date.valid || date.pristine"
           class="alert alert-danger">
           Date is required
