@@ -7,7 +7,7 @@
     <label for="desc">Business </label>
     <input type="text" class="form-control" [(ngModel)]="transModel.desc" id="desc" name="desc" required #spy #desc="ngModel"> 
     {{spy.className}} 
-    <div [hidden]="desc.valid || desc.pristine"
+    <div [hidden]="desc.valid || desc.untouched"
           class="alert alert-danger">
           Business is required
     </div>
