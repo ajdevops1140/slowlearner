@@ -2,7 +2,7 @@
 
 	<h4>Transaction Entry</h4>
 	<br/>
-	<form #transactionForm="ngForm">
+	<form (ngSubmit)="onSubmit()" #transactionForm="ngForm">
 		<div class='form-group'>
 			<label for="desc">Business </label>
 			<input type="text" class="form-control" [(ngModel)]="transModel.desc" id="desc" name="desc" required #desc="ngModel"
@@ -31,7 +31,7 @@
 		</div>
 
 		<button type="submit" class="btn btn-success" 
-    (click)="addTransaction(transactionForm);">Submit</button>
+    [disabled]="!transactionForm.form.valid">Submit</button>
   
 	</form>
   {{diagnostic}}

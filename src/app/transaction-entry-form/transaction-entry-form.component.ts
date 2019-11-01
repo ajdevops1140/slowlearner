@@ -10,8 +10,6 @@ import { DatePipe } from "@angular/common";
 export class TransactionEntryFormComponent implements OnInit {
   transModel: transactionItem;
 
-  date1: string;
-
   constructor() {}
 
   ngOnInit() {
@@ -27,9 +25,13 @@ export class TransactionEntryFormComponent implements OnInit {
     return JSON.stringify(this.transModel);
   }
 
-  addTransaction(formVar:any)
+  onSubmit()
   {
     //formVar.reset();
-    this.transModel = new transactionItem(0,new Date().toISOString().substring(0, 10),'After Submit');
+    //this.transModel = new transactionItem(0,new Date().toISOString()//.substring(0, 10));
+    
+    //Add logic for submission here
+    let newTran = JSON.stringify(this.transModel);
+    console.log(`Submitted from onSubmit() ${newTran}`);
   }
 }
